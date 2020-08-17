@@ -1,4 +1,12 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [EkScript](README.md)
+
+## EkScript guide
+
+* [Untitled](ekscript-guide/untitled.md)
+
+## Handbook
+
+* [Basic Types](handbook/basic-types.md)
 
