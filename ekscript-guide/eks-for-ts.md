@@ -16,7 +16,23 @@ WORK-IN-PROGRESS
 
 ### No more \`===\`!
 
-rBAAaas
+Yes. No more '==' and '===' confusion. Simply write '==' everywhere.
+
+## New Number Types
+
+A few number types have been introduced in EkScript.
+
+#### u8, u16, u32
+
+Unsigned integers. \(8-bit, 16-bit, 32-bit respectively\)
+
+#### i8, i16, i32
+
+Signed Integers \(8-bit, 16-bit, 32-bit respectively\)
+
+#### f32, f64
+
+Floating point numbers \(32-bit and 64-bit respectively\)
 
 
 
@@ -120,5 +136,7 @@ const var3 = JSON.parse('{ "hello": "world" }'); // ❌
 someRandomFunc(JSON.parse('{ "hello": "world" }')); // ❌
 ```
 
-### 
+{% hint style="warning" %}
+WORK-IN-PROGRESS
+{% endhint %}
 
