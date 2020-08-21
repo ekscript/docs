@@ -11,11 +11,11 @@
 
 * [Basic Types](handbook/basic-types.md)
 
+## Other Handbooks
+
+* [Advanced Handbook](other-handbooks/advanced-handbook.md)
+
 ## EkScript for absolute beginners <a id="ekscript-for-beginners"></a>
 
 * [What is programming?](ekscript-for-beginners/what-is-programming.md)
-
----
-
-* [Advanced Handbook](advanced-handbook.md)
 
