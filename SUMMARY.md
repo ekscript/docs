@@ -5,13 +5,17 @@
 ## EkScript guide
 
 * [EkScript for everyone](ekscript-guide/ekscript-for-everyone.md)
-* [For TypeScript Programmers](ekscript-guide/eks-for-ts.md)
+* [Eks for TS Devs](ekscript-guide/eks-for-ts.md)
 
 ## Handbook
 
 * [Basic Types](handbook/basic-types.md)
 
-## EkScript for beginners
+## EkScript for absolute beginners <a id="ekscript-for-beginners"></a>
 
 * [What is programming?](ekscript-for-beginners/what-is-programming.md)
+
+---
+
+* [Advanced Handbook](advanced-handbook.md)
 

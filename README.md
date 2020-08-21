@@ -1,8 +1,10 @@
 ---
-description: A scalable language for the next 20 years
+description: EkScript or Eks(pronounced `x`) is a scalable language for the next 20 years
 ---
 
 # EkScript
+
+![](.gitbook/assets/ekscript.png)
 
 ## What is EkScript? 
 
@@ -24,19 +26,19 @@ EkScript was built out of the need for a programming language that meets the fol
 
 And many more things. Give it a go. You will love it.
 
-### The EkScript Compiler
+## What's inside?
 
 Written in Rust, The EkScript compiler is fast! Damn Fast! No more slow compile times you face with TypeScript.
 
-**EkScript** ❤️ **TypeScript**
+### **EkScript** ❤️ **TypeScript**
 
 All TypeScript modules are 100% compatible with EkScript through an easy-to-use interop. So, no more wasting time relearning new languages.
 
-**EkScript Bundler**
+### **EkScript Bundler**
 
 EkScript comes with a modern bundler that takes care of all the difficult configurations for you.
 
-### Let's get started then!
+## Let's get started then!
 
 
 
