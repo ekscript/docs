@@ -1,8 +1,12 @@
 ---
-description: EkScript or Eks(pronounced `x`) is a scalable language for the next 20 years
+description: EkScript or Eks (pronounced `x`) is a scalable language for the next 20 years
 ---
 
 # EkScript
+
+{% hint style="warning" %}
+EkScript is now just in conceptual stage. First pre-alpha release will be on 30th September! So, tune-in
+{% endhint %}
 
 ![](.gitbook/assets/ekscript.png)
 
