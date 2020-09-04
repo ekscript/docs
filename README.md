@@ -1,5 +1,5 @@
 ---
-description: EkScript or Eks (pronounced `x`) is a scalable language for the next 20 years
+description: EkScript or Eks is a scalable language for the next 20 years
 ---
 
 # EkScript
@@ -20,13 +20,13 @@ EkScript is easy-to-learn as it is almost 99% TypeScript syntax but more easier 
 
 EkScript was built out of the need for a programming language that meets the following requirements for an alternative language that...
 
-1. **...is based on another very, very popular language users use at present:** Two choices emerge here: JavaScript and Python.
-2. **...has static typing for avoiding runtime errors:** JavaScript has TypeScript. Python has mypy. TypeScript's popularity in this case again makes it the better choice to base EkScript on.
-3. **...has a AOT and JIT mode without any VM:** JIT mode let's developers iterate on their programs fast. AOT mode let's users run the production based app fast natively. A compiler/language that supports both is not present at the moment \(Dart AOT still runs on DartV\).
-4. **...least amount of Runtime errors and more compile time errors:** Runtime errors are a mess. TypeScript having loosely typed still runs on top of JavaScript with many caveats for runtime errors. Go still delegates many stuff to runtime. The compiler should be responsible for handling runtime errors.
-5. **...has no Pointers.** Go is the closest to the requirement \(3\) \(it's compile time speed is fast\). But pointers are a mess to deal with. Rust is very good with that. Kotlin does a pretty good job with this. EkScript derives a lot from Kotlin thus.
-6. **...has the standard libraries similar to JavaScript:** JavaScript's choice for the base language means that EkScript supports all NodeJS and Browser APIs out-of-the-box
-7. **...compiles to many different Object-Oriented languages**: EkScript's ability to compile/transpile to JavaScript, C++, Dart, Kotlin and Swift gives is the ability to run everywhere and let's developers really **learn-once-write-once-run-anywhere.**
+1. **...is based on another very, very popular language developers use at present.** TypeScript's popularity and similarity with EkScript means developers won't have to relearn everything from scratch.
+2. **...has static typing for avoiding runtime errors:** EkScript has a strong typing system making it perfect for minimizing trivial development bugs.
+3. **...has a AOT and JIT mode without any VM:** Having a Just-in-Time mode means better developer productivity and faster iterations helping any organization or individual release software in record time. Combine that with a fully compatible Ahead-Of-Time mode means the final output will have state-of-the-art optimized performance. 
+4. **...least amount of Runtime errors and more compile time errors:** The strong static typing baked in helps fix the most trivial bugs before they get to the end users of any software.
+5. **...has no Pointers.** EkScript is a perfect combination of ease-of-use and high performance. Developers won't have to worry about pointers as it has an automatic garbage collection.
+6. **...has the standard libraries similar to JavaScript:** TypeScript's choice for the base language means that EkScript supports all NodeJS and Browser APIs out-of-the-box. This means developers are jumping into familiar grounds and use their favorite standard library features.
+7. **...compiles to many different Object-Oriented languages**: EkScript's ability to compile/transpile to JavaScript, C++, Dart, Kotlin and Swift gives it the ability to run on every possible platform present today ranging from the web to small-embedded devices. Its a real **learn-once-write-once-run-anywhere** programming language.
 
 And many more things. Give it a go. You will love it.
 
