@@ -5,7 +5,7 @@ description: EkScript or Eks is a scalable language for the next 20 years
 # EkScript
 
 {% hint style="warning" %}
-EkScript is now just in conceptual stage. First pre-alpha release will be on 30th September! So, tune-in
+EkScript is now just in conceptual stage. First pre-alpha release will be on 5th October! So, tune-in
 {% endhint %}
 
 ![](.gitbook/assets/ekscript.png)
