@@ -18,29 +18,21 @@ WORK-IN-PROGRESS
 
 Yes. No more '==' and '===' confusion. Simply write '==' everywhere.
 
-## New Number Types
+## New Types
 
 A few number types have been introduced in EkScript.
 
-#### u8, u16, u32
+#### int, float
 
-Unsigned integers. \(8-bit, 16-bit, 32-bit respectively\)
+A character type is also present. So, strings and characters co-exist
 
-#### i8, i16, i32
-
-Signed Integers \(8-bit, 16-bit, 32-bit respectively\)
-
-#### f32, f64
-
-Floating point numbers \(32-bit and 64-bit respectively\)
-
-
+**char**
 
 ### No \`any\`, \`undefined\`, \`unknown\`, \`never\`, \`NaN\` and false-y values
 
-To maintain a consistent strict code style, EkScript bars you from using `any` , `undefined` , `unknown` , `NaN` and `never` `null` is to be used everywhere wherever previously you used `undefined`. This brings us to the concept of `nullable` and `non-nullable` types. Types that might have a `null` value or might not.
+To maintain a consistent strict code style, EkScript bars you from using `any` , `undefined` , `unknown` , `NaN` and `never` **.**`null` is to be used everywhere wherever previously you used `undefined`. This brings us to the concept of `nullable` and `non-nullable` types. Types that might have a `null` value or might not.
 
-There are no false-y values either. That means `if` statements only take boolean. This also means that `!` unary operator is only for boolean types. Yes, you have to write more code but this will save time in the long run!
+There are only two false-y values. That means `if` statements only take boolean and numbers for processing \(ruby like\). This also means that `!` unary operator is only for boolean types and number types. Yes, you have to write more code but this will save time in the long run!
 
 ```typescript
 // --- ❌ ERROR! TS Only ❌ ---
@@ -73,29 +65,6 @@ c.hello = null;    // nullable fields
 
 function fn(a: object) {
     console.log(a?.hello);    // null
-}
-```
-
-### No return and \`void\` returns
-
-In EkScript you can avoid writing `return` at the end of a function. Just omit \`;\` at the end of the line and boom.
-
-```typescript
-function fn(a: f64): f64 {
-    let aMod = a + 1.0
-    aMod            // returns aMod. Don't use `;`
-}
-function fn2(b: i32) {
-    console.log(`b is : ${b}`)
-    // returns void
-}
-
-function fn3(c: i32): number {
-    return void;    //    explicitly write void
-    
-    // ❌ no post-return statements
-    console.log('Hello World')    // ❌
-}
 ```
 
 ## Browser DOM APIs
@@ -119,7 +88,7 @@ f.prototype.hello = 3;
 this.hello = 'there';
 ```
 
-### JSON + JSON5
+### JSON + EKON
 
 In TypeScript, `JSON.parse` returns `any` type. EkScript doesn't have `any` . You have to either explicitly infer the type through the generic or by giving the declaration variable the Type
 
