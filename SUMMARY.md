@@ -5,7 +5,7 @@
 ## EkScript guide
 
 * [EkScript for everyone](ekscript-guide/ekscript-for-everyone.md)
-* [Eks for TS Devs](ekscript-guide/eks-for-ts.md)
+* [Ekscript for TS Devs](ekscript-guide/eks-for-ts.md)
 
 ## Handbook
 

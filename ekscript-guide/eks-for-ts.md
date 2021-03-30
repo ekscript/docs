@@ -2,7 +2,7 @@
 description: "Know TypeScript? It will take about 5 minutes  to get to know what is \U0001F680"
 ---
 
-# Eks for TS Devs
+# Ekscript for TS Devs
 
 EkScript is very, very similar to TypeScript. It has the same NodeJS APIs for server-side programming.
 
@@ -14,9 +14,7 @@ WORK-IN-PROGRESS
 
 ## Language specification
 
-### No more \`===\`!
-
-Yes. No more '==' and '===' confusion. Simply write '==' everywhere.
+### 
 
 ## New Types
 
@@ -24,9 +22,7 @@ A few number types have been introduced in EkScript.
 
 #### int, float
 
-A character type is also present. So, strings and characters co-exist
-
-**char**
+Character type: **char**
 
 ### No \`any\`, \`undefined\`, \`unknown\`, \`never\`, \`NaN\` and false-y values
 
@@ -67,9 +63,11 @@ function fn(a: object) {
     console.log(a?.hello);    // null
 ```
 
-## Browser DOM APIs
+## Extra Additions + Improvements
 
- EkScript comes with `libDOM.d.eks` which is similar to `libDOM.d.ts` with a more strict API. TypeScript programmers won't even have to sweat on EkScript.
+### No more \`===\`!
+
+Yes. No more '==' and '===' confusion. Simply write '==' everywhere.
 
 ### No Prototype, different \`this\`!
 
@@ -88,24 +86,56 @@ f.prototype.hello = 3;
 this.hello = 'there';
 ```
 
+### Pattern Matching
+
+There are two additions to EkScript. First is its pattern matcher which takes types as first class citizens:  
+
+
+```typescript
+const variable: string | int = 1;
+
+match(variable)(
+    int => console.log("int found"),
+    string => console.log("")
+)
+```
+
+### Improved `typeof` operator
+
+Since we have types as first class citizens, EkScript provides a way to check types using simple \`typeof\` operator.
+
+NOTE: This can only be used with certain binary operators and should be explicitly declared. \(More on that later\)
+
+```typescript
+// --- ✅ VALID! ✅ ---
+if (typeof a == int) {
+    console.log("int found");
+} else if (typeof b == string) {
+    console.log("string found")
+}
+
+// --- ERROR! ❌ ---
+typeof typeof int; // cannot use it outside a binary expression
+```
+
+## Browser DOM APIs
+
+ EkScript comes with `libDOM.d.ek` which is similar to `libDOM.d.ts` with a more strict API. TypeScript programmers won't even have to sweat on EkScript.
+
 ### JSON + EKON
 
-In TypeScript, `JSON.parse` returns `any` type. EkScript doesn't have `any` . You have to either explicitly infer the type through the generic or by giving the declaration variable the Type
+In TypeScript, `JSON.parse` returns `any` type. EkScript doesn't have `any`. Instead it takes a generic type that will be inferred at runtime giving you type-safety. EkScript ships with [**EKON**](https://github.com/ekon-org/ekon) ****instead of JSON. **EKON** is a superset of JSON and is quite excellent as a message passing or configuration file.
 
 ```typescript
 type THello = { hello: string } 
 
 // --- ✅ VALID! ✅ ---
-const var1 = JSON.parse<THello>('{ "hello": "world" }');
-const var2: THello = JSON.parse('{ "hello": "world" }');
-const var3 = JSON.parse('{ "hello": "world" }') as THello;
+const var1 = EKON.parse<THello>('{ "hello": "world" }');
+const var2: EKONObject = JSON.parse('{ "hello": "world" }');
+const var3 = JSON.parse('{ "hello": "world" }'); // inferred as EKONObject
 
 // --- ERROR! ❌ ---
-const var3 = JSON.parse('{ "hello": "world" }'); // ❌
-someRandomFunc(JSON.parse('{ "hello": "world" }')); // ❌
+const var3 = JSON.parse('{ "hello": "world" }');
+someRandomFunc(JSON.parse('{ "hello": "world" }'));
 ```
-
-{% hint style="warning" %}
-WORK-IN-PROGRESS
-{% endhint %}
 
